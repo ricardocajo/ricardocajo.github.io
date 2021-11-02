@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 130px;
+}
+nav h2{
+    display: inline-block;
+    padding: 8px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 35px;
+}
+nav h2:hover{
+    cursor: pointer;
+}
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 0px 0px 40px;
+    position: relative;
+}
+.nav-links ul li button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li button:hover {
+    cursor: pointer;
+}
+.nav-language{
+    flex: 1;
+    text-align: right;
+}
+.nav-language input{
+    width: 30px;
+}
+.nav-language ul li{
+    display: inline-block;
+    padding: 0px 6px;
+    position: relative;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: white;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    opacity: 0.6;
+}
+.footer-links img{
+    width: 35px;
+}
+.footer-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 0px 0px 40px;
+    position: relative;
+}
+.footer-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer-links ul li:hover::after{
+    width: 100%;
+}
+.content ul{
+    column-count: 2;
+    color: white;
+}
+.content div{
+    padding: 35px 150px 0px 150px;
+}
+.content h1{
+    font-size: 55px;
+    color: #007acc;
+}
+.content h2{
+    color: #007acc;
+}
+.content p{
+    color: white;
+}
+.content a{
+    color: white;
+}
+#personal img{
+    width: 190px;
+}
+#personal ul{
+    list-style-type: none;
+    column-count: 3;
+}
+#personals ul li{
+    display: inline-block;
+    padding: 0px 6px;
+    position: relative;
+    align-items: center;
+}

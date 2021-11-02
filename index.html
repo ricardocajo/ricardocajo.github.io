@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <input onclick="changeNav('about')" type="image" src="images/my_photo.png">
+            <h2 onclick="changeNav('about')">Ricardo Cordeiro</h2>
+            <div class="nav-language">
+                <ul>
+                    <li><input onclick="changeLanguage('english')" type="image" src="images/england.jpg"></li>
+                    <li><input onclick="changeLanguage('portuguese')" type="image" src="images/portugal.png"></li>
+                    <li><input onclick="changeLanguage('japanese')" type="image" src="images/japan.png"></li>
+                </ul>
+            </div>
+            <div class="nav-links">
+                <section class="english" style="display: block;">
+                    <ul>
+                        <li><button onclick="changeNav('experience')">Experience</button></li>
+                        <li><button onclick="changeNav('education')">Education</button></li>
+                        <li><button onclick="changeNav('technologies')">Technologies</button></li>
+                        <li><button onclick="changeNav('personal')">Personal</button></li>
+                    </ul>
+                </section>
+                <section class="portuguese" style="display: none;">
+                    <ul>
+                        <li><button onclick="changeNav('experience')">Experiência</button></li>
+                        <li><button onclick="changeNav('education')">Educação</button></li>
+                        <li><button onclick="changeNav('technologies')">Tecnologias</button></li>
+                        <li><button onclick="changeNav('personal')">Pessoal</button></li>
+                    </ul>
+                </section>
+                <section class="japanese" style="display: none;">
+
+                </section>
+            </div>
+        </nav>
+        <section class="content">
+            <div id="about" style="display: block;">
+                <section class="english" style="display: block;">
+                    <h1 class="title">About</h1>
+                    <br>
+                    <p>I'm a MSc. Student at Faculdade de Ciências da Universidade de Lisboa (FCUL). 
+                        I received my BSc. In Computer Science from the University of Lisbon in 2019. 
+                        Currently, i'm working under the supervision of 
+                        <a href="https://wiki.alcidesfonseca.com/" target="_blank">Alcides Fonseca</a> 
+                        on the subject RoboFix: formalization of invariants for robots.</p>
+                </section>
+                <section class="portuguese" style="display: none;">
+                    <h1 class="title">Sobre</h1>
+                    <br>
+                    <p>Eu sou um estudante de Mestrado na Faculdade de Ciências da Universidade de Lisboa (FCUL). 
+                        Recebi a minha Licenciatura. em Engenharia Informática na Universidade de Lisboa em 2019. 
+                        No momento, trabalho sobre a supervisão do Professor 
+                        <a href="https://wiki.alcidesfonseca.com/" target="_blank">Alcides Fonseca</a> 
+                        no tema RoboFix: formalização de invariantes para robôs.</p>
+                </section>
+                <section class="japanese" style="display: none;">
+
+                </section>
+            </div>
+            <div id="experience" style="display: none;">
+                <section class="english" style="display: block;">
+                    <h1 class="title">Experience</h1>
+                    <br>
+                    <h2>Sep 2019 - Jul 2020, Junior Consultant at ROFF</h2>
+                    <p>Working at a support service, mainly with SAP Portal/SAP Netweaver as a frontend Java framework
+                        and using Oracle SQL Developer as a persistence framework, I often had to access SAP ERP and 
+                        ABAP code as a backend framework. This means I am somewhat familiar with their Model View Controller 
+                        architecture. There were also different types of Data Services handled either by SAP BI or directly 
+                        with Java code. When there wasn’t much support service work-related stuff I would help the development
+                        team or develop helpful tools myself.</p>
+                </section>
+                <section class="portuguese" style="display: none;">
+                    <h1 class="title">Experiência</h1>
+                    <br>
+                    <h2>Set 2019 - Jul 2020, Consultor Júnior em ROFF</h2>
+                    <p>A trabalhar no serviço de suporte, maioritáriamente com SAP Portal/SAP Netweaver em frontend Java framework
+                        e Oracle SQL Developer como framework de persistência, regularmente precisava de aceder ao SAP ERP e 
+                        código ABAP como framework backend. Isto significa que estou de certa forma familiarizado com a sua arquitectura  
+                        Model View Controller. Haviam também diferentes tipos de Data Services utilizados tanto pelo SAP BI ou diretamente 
+                        por código Java. Quando não havia muito trabalho relacionado com o suporte eu ajudava a equipa de desenvolvimento
+                        ou desenvolvia eu próprio ferramentas úteis.</p>
+                </section>
+                <section class="japanese" style="display: none;">
+
+                </section>
+            </div>
+            <div id="education" style="display: none;">
+                <section class="english" style="display: block;">
+                    <h1 class="title">Education</h1>
+                    <br>
+                    <h2>2020 - 2022, Masters Degree, Computer science and engineering</h2>
+                    <p>Main Courses: (Average: 15.4)</p>
+                    <ul>
+                        <li>Compilation Techniques: 16</li>
+                        <li>Artificial Intelligence in Games: 17</li>
+                        <li>Automatic Learning: 16</li>
+                        <li>Game Design and Development: 17</li>
+                        <li>Multi-Agent Systems: 16</li>
+                    </ul>
+                    <br>
+                    <h2>2016 - 2019, Licentiate Degree, Computer science and engineering</h2>
+                    <p>Main Courses: (Average: 14)</p>
+                    <ul>
+                        <li>Information Technology in the User’s Perspective: 17</li>
+                        <li>Computer Network: 16</li>
+                        <li>Introduction to Operational Research: 16</li>
+                        <li>Introduction to Programming: 18</li>
+                        <li>First Order Logic: 17</li>
+                        <li>Introduction to Probabilities and Statistics: 17</li>
+                    </ul>
+                </section>
+                <section class="portuguese" style="display: none;">
+                    <h1 class="title">Educação</h1>
+                    <br>
+                    <h2>2020 - 2022, Mestrado, Engenharia Informática</h2>
+                    <p>Cadeiras relevantes: (Média: 15.4)</p>
+                    <ul>
+                        <li>Técnicas de Compilação: 16</li>
+                        <li>Inteligência Artificial em Jogos: 17</li>
+                        <li>Aprendizagem Automática: 16</li>
+                        <li>Desenho e Desenvolvimento de Jogos: 17</li>
+                        <li>Sistemas Multi-Agente: 16</li>
+                    </ul>
+                    <br>
+                    <h2>2016 - 2019, Licenciatura, Engenharia Informática</h2>
+                    <p>Cadeiras relevantes: (Média: 14)</p>
+                    <ul>
+                        <li>Informática na Ótica do Utilizador: 17</li>
+                        <li>Redes de Computadores: 16</li>
+                        <li>Introdução à Investigação Operacional: 16</li>
+                        <li>Introdução à Programação: 18</li>
+                        <li>Lógica de Primeira Ordem: 17</li>
+                        <li>Introdução às Probabilidades e Estatística: 17</li>
+                    </ul>
+                </section>
+                <section class="japanese" style="display: none;">
+
+                </section>
+            </div>
+            <div id="technologies" style="display: none;">
+                <section class="english" style="display: block;">
+                    <h1 class="title">Technologies</h1>
+                    <br>
+                    <h2>Programming Languages</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>ABAP</li>
+                        <li>C</li>
+                    </ul>
+                    <br>
+                    <h2>Databases</h2>
+                    <ul>
+                        <li>SQL</li>
+                        <li>OracleSQLDeveloper</li>
+                    </ul>
+                    <br>
+                    <h2>Others</h2>
+                    <ul>
+                        <li>SAP Netweaver</li>
+                        <li>SAP Portal</li>
+                        <li>SAP ERP</li>
+                        <li>SAP BI</li>
+                        <li>Git</li>
+                        <li>Eclipse</li>
+                        <li>Unity</li>
+                        <li>HTML</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </section>
+                <section class="portuguese" style="display: none;">
+                    <h1 class="title">Tecnologias</h1>
+                    <br>
+                    <h2>Linguagens de Programação</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                        <li>ABAP</li>
+                        <li>C</li>
+                    </ul>
+                    <br>
+                    <h2>Bases de dados</h2>
+                    <ul>
+                        <li>SQL</li>
+                        <li>OracleSQLDeveloper</li>
+                    </ul>
+                    <br>
+                    <h2>Outros</h2>
+                    <ul>
+                        <li>SAP Netweaver</li>
+                        <li>SAP Portal</li>
+                        <li>SAP ERP</li>
+                        <li>SAP BI</li>
+                        <li>Git</li>
+                        <li>Eclipse</li>
+                        <li>Unity</li>
+                        <li>HTML</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </section>
+                <section class="japanese" style="display: none;">
+
+                </section>
+            </div>
+            <div id="personal" style="display: none;">
+                <section class="english" style="display: block;">
+                    <h1 class="title">Personal</h1>
+                </section>
+                <section class="portuguese" style="display: none;">
+                    <h1 class="title">Pessoal</h1>
+                </section>
+                <section class="japanese" style="display: none;">
+
+                </section>
+                <br>
+                <br>
+                <ul>
+                    <li><a href="https://www.goodreads.com/review/list/142368928?page=1&sort=rating" target="_blank"><img src="images/goodreads_icon.jpg"></a></li>
+                    <li><a href="https://myanimelist.net/animelist/ricardocajo?status=7&order=4&order2=0" target="_blank"><img src="images/mal_icon.png"></a></li>
+                    <li><a href="https://steamcommunity.com/id/ricardocajo/" target="_blank"><img src="images/steam_icon.png"></a></li>
+                </ul>
+                <br>
+                <iframe src="https://open.spotify.com/embed/playlist/1EUgf39fomT2UcJfzZGhGY?utm_source=generator" width="100%" height="185"
+                frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </section>
+    </section>
+    <section class="footer">
+        <div class="footer-links">
+            <ul>
+                <li><a href="mailto:ricas.cordeiro@gmail.com" target="_blank"><img src="images/envelope_icon.png"></a></li>
+                <li><a href="https://www.linkedin.com/in/ricardojorgecordeiro/" target="_blank"><img src="images/linkedin_icon.png"></a></li>
+                <li><a href="https://github.com/ricardocajo" target="_blank"><img src="images/github_icon.png"></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
