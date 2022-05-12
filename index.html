@@ -14,8 +14,14 @@
 <body>
     <section class="header">
         <nav>
-            <input onclick="changeNav('about')" type="image" src="images/my_photo.png">
-            <h2 onclick="changeNav('about')">Ricardo Cordeiro</h2>
+            <div class="nav-about">
+                <ul>
+                    <li>
+                        <input class="nav-about" onclick="changeNav('about')" type="image" src="images/my_photo.png">
+                        <h2 class="nav-about" onclick="changeNav('about')">Ricardo Cordeiro</h2>
+                    </li>
+                </ul>
+            </div>
             <div class="nav-language">
                 <ul>
                     <!--Images from https://icons8.com.br/-->
@@ -56,20 +62,39 @@
                 <section class="english" style="display: block;">
                     <h1 class="title">About</h1>
                     <br>
-                    <p>I'm a MSc. Student at Faculdade de Ciências da Universidade de Lisboa (FCUL). 
+                    <p>
+                        I'm a MSc. Student at Faculdade de Ciências da Universidade de Lisboa (FCUL). 
                         I received my BSc. In Computer Science from the University of Lisbon in 2019. 
                         Currently, i'm working under the supervision of 
-                        <a href="https://wiki.alcidesfonseca.com/" target="_blank">Alcides Fonseca</a> 
-                        on the subject RoboFix: formalization of invariants for robots.</p>
+                        <a href="https://wiki.alcidesfonseca.com/" target="_blank">Alcides Fonseca</a> and
+                        <a href="http://www.christimperley.co.uk/" target="_blank">Chris Timperley</a>
+                        on the subject: Formalization and Runtime Verification of Invariants for Robotic Systems.
+                    </p>
+                    <br>
+                    <p>
+                        CV: <a href="RicardoCordeiro_CV.pdf">RicardoCordeiro_CV.pdf</a>
+                    </p>
+                    <!--TODO 
+                        add reference to paulo paper
+                        add reference to thesis
+                        add reference to thesis work repo
+                    -->
                 </section>
                 <section class="portuguese" style="display: none;">
                     <h1 class="title">Sobre</h1>
                     <br>
-                    <p>Eu sou um estudante de Mestrado na Faculdade de Ciências da Universidade de Lisboa (FCUL). 
+                    <p>
+                        Eu sou um estudante de Mestrado na Faculdade de Ciências da Universidade de Lisboa (FCUL). 
                         Recebi a minha Licenciatura. em Engenharia Informática na Universidade de Lisboa em 2019. 
-                        No momento, trabalho sobre a supervisão do Professor 
-                        <a href="https://wiki.alcidesfonseca.com/" target="_blank">Alcides Fonseca</a> 
-                        no tema RoboFix: formalização de invariantes para robôs.</p>
+                        No momento, trabalho sobre a supervisão dos Professores 
+                        <a href="https://wiki.alcidesfonseca.com/" target="_blank">Alcides Fonseca</a> e
+                        <a href="http://www.christimperley.co.uk/" target="_blank">Chris Timperley</a>
+                        no tema: Formalization and Runtime Verification of Invariants for Robotic Systems.
+                    </p>
+                    <br>
+                    <p>
+                        CV: <a href="RicardoCordeiro_CV.pdf">RicardoCordeiro_CV.pdf</a>
+                    </p>
                 </section>
                 <section class="japanese" style="display: none;">
                     <h1 class="title">就いて</h1>
@@ -198,6 +223,7 @@
                     <ul>
                         <li>Java</li>
                         <li>Python</li>
+                        <li>Jinja</li>
                         <li>C#</li>
                         <li>ABAP</li>
                         <li>C</li>
@@ -211,6 +237,9 @@
                     <br>
                     <h2>Outros</h2>
                     <ul>
+                        <li>ROS</li>
+                        <li>Gazebo</li>
+                        <li>Docker</li>
                         <li>SAP Netweaver</li>
                         <li>SAP Portal</li>
                         <li>SAP ERP</li>
@@ -219,7 +248,6 @@
                         <li>Eclipse</li>
                         <li>Unity</li>
                         <li>HTML</li>
-                        <li>Microsoft Visual Studio</li>
                         <li>Microsoft Office</li>
                     </ul>
                 </section>
@@ -249,6 +277,9 @@
                 <iframe src="https://open.spotify.com/embed/playlist/1EUgf39fomT2UcJfzZGhGY?utm_source=generator" width="100%" height="185"
                 frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
+        </section>
+        <section class="banner_notice">
+            <p><small><i>The background art is AI generated by typing "robot searching dark landscape"</i></small></p>
         </section>
     </section>
     <section class="footer">
