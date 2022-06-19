@@ -7963,7 +7963,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(215, 255, 255, 1) !important;
 }
 
 .text-reset {
@@ -11611,6 +11611,8 @@ body {
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  --bs-text-opacity: 1;
+  color: rgba(215, 255, 255, 1) !important;
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11650,6 +11652,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  --bs-text-opacity: 1;
+  color: rgba(215, 255, 255, 1) !important;
 }
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
