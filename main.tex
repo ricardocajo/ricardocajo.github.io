@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Designer's CV
+%
+% Source: http://www.howtotex.com
+% 
+% Feel free to distribute this example, but please keep the referral
+% to HowToTeX.com
+% 
+% Date: March 2012
+%
+% Modified by Lim Lian Tze to support multiple pages using fix provided at
+% http://www.howtotex.com/templates/creating-a-designers-cv-in-latex/
+% Date: November 2014
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document prties and packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,final]{memoir}
+
+% misc
+\renewcommand{\familydefault}{bch}	% font
+\pagestyle{empty}					% no pagenumbering
+\setlength{\parindent}{0pt}			% no paragraph indentation
+
+% required packages (add your own)
+\usepackage{flowfram}										% column layout
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
+\usepackage{graphicx}										% figures
+\usepackage{url}											% URLs
+\usepackage[usenames,dvipsnames]{xcolor}					% color
+\usepackage{multicol}										% columns env.
+	\setlength{\multicolsep}{0pt}
+\usepackage{paralist}										% compact lists
+\usepackage{tikz}
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Create column layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define length commands
+\setlength{\vcolumnsep}{\baselineskip}
+\setlength{\columnsep}{\vcolumnsep}
+
+% left frame
+\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
+	\newlength{\LeftMainSep}
+	\setlength{\LeftMainSep}{0.2\textwidth}
+	\addtolength{\LeftMainSep}{1\columnsep}
+ 
+% small static frame for the vertical line
+\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+ 
+% content of the static frame
+\begin{staticcontents}{1}
+\hfill
+\tikz{%
+	\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0]
+	(0,0) -- (0,\textheight);}%
+\hfill\mbox{}
+\end{staticcontents}
+ 
+% right frame
+\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1\columnsep}
+\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% define macros (for convience)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Sep}{\vspace{1.5em}}
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+\newenvironment{AboutMe}
+	{\ignorespaces\textbf{\color{RoyalBlue} About me}}
+	{\Sep\ignorespacesafterend}
+	
+\newcommand{\CVSection}[1]
+	{\Large\textbf{#1}\par
+	\SmallSep\normalsize\normalfont}
+
+\newcommand{\CVItem}[1]
+	{\textbf{\color{RoyalBlue} #1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Left frame
+%%%%%%%%%%%%%%%%%%%%
+%
+% Upload your own photo using the files menu
+\begin{figure}
+	\hfill
+	\includegraphics[width=0.6\columnwidth]{cv-photo.png}
+	\vspace{-7cm}
+\end{figure}
+
+\begin{flushright}\small
+	Ricardo Jorge Dias Cordeiro \\
+	\url{ricas.cordeiro@gmail.com}  \\
+	%\url{https://www.linkedin.com/in/ricardo-cordeiro-33556218b} \\
+	\href{https://ricardocajo.github.io/}{ricardocajo.github.io}
+    (+351) 910627129
+	Montijo, Portugal
+\end{flushright}\normalsize
+\framebreak
+
+
+% Right frame
+%%%%%%%%%%%%%%%%%%%%
+\Huge\bfseries {\color{RoyalBlue} Ricardo Cordeiro} \\
+\Large\bfseries  Computer science and engineering \\
+
+\normalsize\normalfont
+
+% About me
+\begin{AboutMe}
+During my academic path, I grew to take interest in multiple fields of informatics like compilation techniques and robotics, even attending some conventions like \href{https://roscon.ros.org/world/2021/}{ROSCon} and \href{https://rose-workshops.github.io/rose2022/}{RoSE}. In my free time, I'm developing a game and learning Japanese. Feel free to reach me if you wish to know more!
+\end{AboutMe}
+
+%Paper
+%Thesis
+%Github repo
+
+% Education
+\CVSection{Education}
+
+\CVItem{2020 - 2023, Masters Degree, Computer science and engineering}\\
+Main Courses: (Average: 14)
+\begin{multicols}{2}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+    \item Compilation Techniques: 16
+	\item Artificial Intelligence in Games: 17
+	\item Automatic Learning: 16
+	\item Game Design and Development: 17
+	\item Multi-Agent Systems: 16
+\end{compactitem}
+\end{multicols}
+\SmallSep
+Final Dissertation on \href{https://github.com/ricardocajo/thesis}{\textit{"Formalization and Runtime Verification of Invariants for Robotic
+Systems"}} advised by \href{https://wiki.alcidesfonseca.com/about/}{Alcides Fonseca} professor at University of Lisbon and by \href{http://www.christimperley.co.uk/}{Chris Timperley} professor at Carnegie Mellon University.
+\SmallSep
+
+\CVItem{2016 - 2019, Licentiate Degree, Computer science and engineering}\\
+Main Courses: (Average: 14)
+\begin{multicols}{2}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+    \item Information Technology in the User's Perspective: 17
+	\item Computer Network: 16
+	\item Introduction to Operational Research: 16
+	\item Introduction to Programming: 18 
+	\item First Order Logic: 17
+	\item Introduction to Probabilities and Statistics: 17
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\Sep
+
+% Experience
+\CVSection{Experience}
+
+\CVItem{Sep 2022 - Current, Software Developer at Körber Supply Chain}\\
+Working in developing solutions for warehouse management. Mainly PL/SQL package creation for all the associated logic. Creation of the User Interface through a Java framework middleware.
+\SmallSep
+
+\CVItem{Sep 2019 - Jul 2020, Junior Consultant at ROFF}\\
+Working at a support service, mainly with SAP Portal/SAP Netweaver as a frontend Java framework and using Oracle SQL Developer as a persistence framework, I often had to access SAP ERP and ABAP code as a backend framework. This means I am somewhat familiar with their Model View Controller architecture. There were also different types of Data Services handled either by SAP BI or directly with Java code. When there wasn't much support service work-related stuff I would help the development team or develop helpful tools myself.
+%\SmallSep
+%\CVItem{Jun 1995 - Apr 1998, Vivamus vel}\\
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus.
+
+%\Sep
+
+\clearpage
+\framebreak
+\framebreak
+
+% Interesting work
+\CVSection{Interesting work}
+
+\CVItem{Error Monitor DSL (ros + gazebo)}
+\href{https://github.com/ricardocajo/error-monitor-ros-gazebo}{(GitHub)} 
+A domain-specific language to specify properties of robotic systems in ROS. Specifications written by developers in this language can be compiled to a monitor ROS module, that will detect violations of those properties. We have used this language to express the temporal and positional properties of robots, and we have automated the monitoring of some behavioral violations of robots in relation to their state or events during a simulation.
+I presented this work at \href{https://inforum.org.pt/}{INForum 2022}.
+\SmallSep
+
+\CVItem{An Experience Report on Challenges in Learning the Robot Operating System}
+I have helped writing a paper where we describe the challenges and experience of learning ROS from the perspective of novice users. This work was presented by my colleague Paulo Canelas at \href{https://rose-workshops.github.io/rose2022/}{RoSE 2022}.
+\SmallSep
+
+\CVItem{Secret Hitler - AI Agents}
+\href{https://github.com/Tiagofvarela/Sistemas-Multi-Agente}{(GitHub)}
+Agents simulate different players' behavior for the Secret Hitler game. Agents have their own memory and comprehension of what happens in the game and make their decisions based on this perception. (Using JADE - JAVA Agent DEvelopment Framework)
+\SmallSep
+
+\Sep
+
+% Skills
+\CVSection{Tools and Technologies}
+\CVItem{Programming Languages}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item Java 
+	\item Python
+	\item Jinja
+	\item C\#
+	\item ABAP
+	\item C
+    \item PL/SQL
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Databases}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+	\item SQL 
+	\item OracleSQLDeveloper
+\end{compactitem}
+\end{multicols}
+\SmallSep
+
+\CVItem{Others}
+\begin{multicols}{3}
+\begin{compactitem}[\color{RoyalBlue}$\circ$]
+    \item ROS
+    \item Gazebo
+    \item Docker
+    \item SAP Netweaver 
+	\item SAP Portal 
+	\item SAP ERP
+	\item SAP BI
+	\item Git
+	\item Unity
+	\item HTML 
+	\item Microsoft Office
+    \item JADE
+\end{compactitem}
+\end{multicols}
+
+\SmallSep
+
+\Sep
+
+% Other
+\CVSection{Other Experiences}
+\CVItem{Sports}\\
+I practiced federate Basketball since I was 6 up until university, holding at
+times the title of Captain, I kept playing at university, although at a lower
+tier.
+
+% You'll need these 3 lines at the end of each page!
+%\clearpage
+%\framebreak
+%\framebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% End document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
