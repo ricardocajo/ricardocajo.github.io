@@ -7963,7 +7963,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(215, 255, 255, 1) !important;
+  color: rgba(200, 200, 200, 1) !important;
 }
 
 .text-reset {
@@ -11566,7 +11566,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/berserk.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11608,11 +11608,21 @@ body {
   }
 }
 
+.about-section1 {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 100%);
+  --bs-text-opacity: 1;
+  color: rgba(200, 200, 200, 1) !important;
+}
+.about-section1 p {
+  margin-bottom: 5rem;
+}
+
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.8) 100%);
   --bs-text-opacity: 1;
-  color: rgba(215, 255, 255, 1) !important;
+  color: rgba(200, 200, 200, 1) !important;
 }
 .about-section p {
   margin-bottom: 5rem;
@@ -11647,13 +11657,13 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/boat.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   --bs-text-opacity: 1;
-  color: rgba(215, 255, 255, 1) !important;
+  color: rgba(200, 200, 200, 1) !important;
 }
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
@@ -11705,4 +11715,18 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.ul-col {
+  columns: 2; /* Set the number of columns */
+  -webkit-columns: 2; /* For webkit browsers */
+  -moz-columns: 2; /* For Mozilla Firefox */
+  column-gap: 1px; /* Adjust the gap between columns */
+}
+
+.ul-col3 {
+  columns: 3; /* Set the number of columns */
+  -webkit-columns: 3; /* For webkit browsers */
+  -moz-columns: 3; /* For Mozilla Firefox */
+  column-gap: 1px; /* Adjust the gap between columns */
 }
